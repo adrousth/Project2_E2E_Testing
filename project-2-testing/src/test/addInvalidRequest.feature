@@ -12,7 +12,7 @@ Feature: Add invalid request
     And I enter a value of <value>
     And I choose a type of <type>
     And I click submit
-    Then I should be redirected to the user page with the new request added
+    Then I should receive an alert with an error message
 
     Examples:
       | username      | password   | initial_date | expiration_date | value | type           |

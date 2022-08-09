@@ -31,4 +31,8 @@ public class AddRequestSteps {
     @Then("I should be redirected to the user page with the new request added")
     public void iShouldBeRedirectedToTheUserPageWithTheNewRequestAdded() {
     }
+
+    @Then("I should receive an alert with an error message")
+    public void iShouldReceiveAnAlertWithAnErrorMessage() {
+    }
 }
