@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Test Suite" duration-ms="8862" started-at="2022-08-10T14:25:05 EDT" finished-at="2022-08-10T14:25:14 EDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="My E2E Tests" duration-ms="8862" started-at="2022-08-10T14:25:05 EDT" finished-at="2022-08-10T14:25:14 EDT">
+      <class name="com.revature.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="setUpClass" is-config="true" duration-ms="141" started-at="2022-08-10T14:25:05 EDT" finished-at="2022-08-10T14:25:05 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@21f459fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="setup" is-config="true" duration-ms="1882" started-at="2022-08-10T14:25:05 EDT" finished-at="2022-08-10T14:25:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="runScenario" duration-ms="1146" started-at="2022-08-10T14:25:07 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-10T14:25:08 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.revature.pages.AddRequestPage.selectWarrantyType(AddRequestPage.java:53)
+at com.revature.steps.AddRequestSteps.iChooseATypeOfType(AddRequestSteps.java:47)
+at ✽.I choose a type of "hospital bed"(file:///C:/Users/Redux/Project2/Project2_testing/project-2-testing/src/test/resources/add_request.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="tearDown" is-config="true" duration-ms="559" started-at="2022-08-10T14:25:08 EDT" finished-at="2022-08-10T14:25:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="setup" is-config="true" duration-ms="1018" started-at="2022-08-10T14:25:09 EDT" finished-at="2022-08-10T14:25:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="runScenario" duration-ms="1071" started-at="2022-08-10T14:25:10 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-10T14:25:11 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.revature.pages.AddRequestPage.selectWarrantyType(AddRequestPage.java:53)
+at com.revature.steps.AddRequestSteps.iChooseATypeOfType(AddRequestSteps.java:47)
+at ✽.I choose a type of "MRI"(file:///C:/Users/Redux/Project2/Project2_testing/project-2-testing/src/test/resources/add_request.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="tearDown" is-config="true" duration-ms="562" started-at="2022-08-10T14:25:11 EDT" finished-at="2022-08-10T14:25:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="setup" is-config="true" duration-ms="1018" started-at="2022-08-10T14:25:11 EDT" finished-at="2022-08-10T14:25:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="runScenario" duration-ms="876" started-at="2022-08-10T14:25:12 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-10T14:25:13 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add request"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add request"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.revature.pages.AddRequestPage.selectWarrantyType(AddRequestPage.java:53)
+at com.revature.steps.AddRequestSteps.iChooseATypeOfType(AddRequestSteps.java:47)
+at ✽.I choose a type of "syringes"(file:///C:/Users/Redux/Project2/Project2_testing/project-2-testing/src/test/resources/add_request.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="tearDown" is-config="true" duration-ms="564" started-at="2022-08-10T14:25:13 EDT" finished-at="2022-08-10T14:25:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.revature.runner.TestRunner@17d0685f]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2022-08-10T14:25:14 EDT" finished-at="2022-08-10T14:25:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.revature.runner.TestRunner -->
+    </test> <!-- My E2E Tests -->
+  </suite> <!-- My Test Suite -->
+</testng-results>

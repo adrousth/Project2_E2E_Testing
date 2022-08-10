@@ -1,0 +1,9 @@
+com\revature\pages\ManagerPage.class
+com\revature\steps\UpdateRequestSteps.class
+com\revature\pages\AdminPage.class
+com\revature\steps\AddRequestSteps.class
+com\revature\runner\TestRunner.class
+com\revature\pages\LoginPage.class
+com\revature\steps\LogoutSteps.class
+com\revature\pages\AddRequestPage.class
+com\revature\steps\LoginSteps.class

@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.178 s <<< FAILURE! - in TestSuite
+com.revature.runner.TestRunner.runScenario["Add request", "Add request"](1)  Time elapsed: 1.148 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.revature.pages.AddRequestPage.selectWarrantyType(AddRequestPage.java:53)
+	at com.revature.steps.AddRequestSteps.iChooseATypeOfType(AddRequestSteps.java:47)
+	at ✽.I choose a type of "hospital bed"(file:///C:/Users/Redux/Project2/Project2_testing/project-2-testing/src/test/resources/add_request.feature:13)
+
+com.revature.runner.TestRunner.runScenario["Add request", "Add request"](2)  Time elapsed: 1.07 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.revature.pages.AddRequestPage.selectWarrantyType(AddRequestPage.java:53)
+	at com.revature.steps.AddRequestSteps.iChooseATypeOfType(AddRequestSteps.java:47)
+	at ✽.I choose a type of "MRI"(file:///C:/Users/Redux/Project2/Project2_testing/project-2-testing/src/test/resources/add_request.feature:13)
+
+com.revature.runner.TestRunner.runScenario["Add request", "Add request"](3)  Time elapsed: 0.876 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.revature.pages.AddRequestPage.selectWarrantyType(AddRequestPage.java:53)
+	at com.revature.steps.AddRequestSteps.iChooseATypeOfType(AddRequestSteps.java:47)
+	at ✽.I choose a type of "syringes"(file:///C:/Users/Redux/Project2/Project2_testing/project-2-testing/src/test/resources/add_request.feature:13)
+

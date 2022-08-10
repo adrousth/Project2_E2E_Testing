@@ -5,7 +5,7 @@ Feature: invalid login
     When I type in a username of <username>
     And I type in a password of <password>
     And I click the login button
-    Then I should receive an alert with an error message
+    Then I should receive an alert with an "invalid username/password" error message
 
     Examples:
       | username      | password   |
