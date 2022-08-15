@@ -18,7 +18,7 @@ import java.time.Duration;
 public class LoginSteps {
 
     public LoginPage loginPage;
-    public String url = "http://127.0.0.1:5500";
+    public String url = "http://ec2-18-223-161-66.us-east-2.compute.amazonaws.com";
     @Given("I am at the login page")
     @Test(groups = "login")
     public void iAmAtTheLoginPage() {

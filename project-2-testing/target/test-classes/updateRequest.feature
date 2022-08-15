@@ -12,5 +12,5 @@ Feature: Update Request
 
     Examples:
       | username      | password   | status     | warranty_id |
-      | "ozwald"      | "password" | "approved" | "32"         |
-      | "mrsmith"     | "password" | "denied"   | "33"         |
+      | "ozwald"      | "password" | "approved" | "40"         |
+      | "mrsmith"     | "password" | "denied"   | "41"         |
