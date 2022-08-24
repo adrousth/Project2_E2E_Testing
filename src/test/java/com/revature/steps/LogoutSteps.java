@@ -33,7 +33,7 @@ public class LogoutSteps {
     }
 
     @When("I click the admin logout button")
-    public void iClickTheAdminLogoutButton() {
+    public void iClickTheAdminLogoutButton() throws InterruptedException {
         adminPage = new AdminPage(TestRunner.driver);
         adminPage.clickLogoutButton();
     }
@@ -51,7 +51,7 @@ public class LogoutSteps {
     }
 
     @And("I click on the manager logout button")
-    public void iClickOnTheManagerLogoutButton() {
+    public void iClickOnTheManagerLogoutButton() throws InterruptedException {
         managerPage = new ManagerPage(TestRunner.driver);
         managerPage.clickLogoutButton();
     }

@@ -41,11 +41,16 @@ public class ManagerPage {
 
     public ManagerPage(WebDriver driver) {
         this.driver = driver;
-        this.wdw = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wdw = new WebDriverWait(driver, Duration.ofSeconds(5));
         PageFactory.initElements(driver, this);
     }
 
-    public void clickLogoutButton() {
+    public void clickLogoutButton() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+
+
+        Thread.sleep(1000);
         logoutButton.click();
     }
 
@@ -89,8 +94,13 @@ public class ManagerPage {
         //}
     }
 
-    public WebElement getLastTableRow() {
+    public WebElement getLastTableRow() throws InterruptedException {
         // wdw.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//tbody[1])/tr[last()]/td[7]")));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+
+
+        Thread.sleep(1000);
         return this.lastRowStatus;
     }
 }

@@ -21,7 +21,7 @@ public class AddRequestSteps {
 
     @And("I click on the add request button")
     @Test(dependsOnGroups = "login")
-    public void iClickOnTheAddRequestButton() {
+    public void iClickOnTheAddRequestButton() throws InterruptedException {
         adminPage = new AdminPage(TestRunner.driver);
         adminPage.clickAddWarrantyButton();
     }

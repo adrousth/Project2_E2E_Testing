@@ -1,5 +1,6 @@
 package com.revature.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,15 +28,25 @@ public class AdminPage {
 
     public AdminPage(WebDriver driver) {
         this.driver = driver;
-        this.wdw = new WebDriverWait(driver, Duration.ofSeconds(2));
+        this.wdw = new WebDriverWait(driver, Duration.ofSeconds(5));
         PageFactory.initElements(driver, this);
     }
 
-    public void clickAddWarrantyButton() {
+    public void clickAddWarrantyButton() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+
+
+        Thread.sleep(1000);
         addWarrantyButton.click();
     }
 
-    public void clickLogoutButton() {
+    public void clickLogoutButton() throws InterruptedException {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+
+
+        Thread.sleep(1000);
         logoutButton.click();
     }
 

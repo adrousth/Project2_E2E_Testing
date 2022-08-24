@@ -34,7 +34,7 @@ public class AddRequestPage {
 
     public AddRequestPage(WebDriver driver) {
         this.driver = driver;
-        this.wdw = new WebDriverWait(driver, Duration.ofSeconds(2));
+        this.wdw = new WebDriverWait(driver, Duration.ofSeconds(5));
         PageFactory.initElements(driver, this);
     }
 
@@ -52,15 +52,13 @@ public class AddRequestPage {
 
     public void selectWarrantyType(String type) {
         Select dropDown = new Select(driver.findElement(By.id("device-select")));
-
         dropDown.selectByValue(type);
-
-        //this.warrantyDeviceDropdown.selectByValue("MRI");
     }
 
 
 
     public void clickSubmitButton() {
+        wdw.until(ExpectedConditions.elementToBeClickable(submitButton));
         this.submitButton.click();
     }
 
