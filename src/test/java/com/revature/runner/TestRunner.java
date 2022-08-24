@@ -25,7 +25,8 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     public void setup() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+
         driver = new ChromeDriver(options);
     }
 
