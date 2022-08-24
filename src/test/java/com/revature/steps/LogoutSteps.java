@@ -20,7 +20,7 @@ public class LogoutSteps {
 
     public AdminPage adminPage;
     public ManagerPage managerPage;
-    public String url = "ec2-18-223-161-66.us-east-2.compute.amazonaws.com";
+    public String url = "http://ec2-18-223-235-20.us-east-2.compute.amazonaws.com/";
 
     public LoginPage loginPage;
 
