@@ -12,11 +12,7 @@ import org.testng.annotations.BeforeMethod;
 @CucumberOptions(glue="com.revature.steps", features={"src/test/resources/add_invalid_request.feature",
        "src/test/resources/addRequest.feature", "src/test/resources/invalid_login.feature",
        "src/test/resources/loginAdmin.feature", "src/test/resources/updateRequest.feature", "src/test/resources/admin_logout.feature", "src/test/resources/loginManager.feature",
-        "src/test/resources/manager_logout.feature"})
-
-//@CucumberOptions(glue="com.revature.steps", features={"src/test/resources/loginAdmin.feature", "src/test/resources/loginManager.feature",
-//        "src/test/resources/invalid_login.feature", "src/test/resources/admin_logout.feature", "src/test/resources/manager_logout.feature"})
-//@CucumberOptions(glue="com.revature.steps", features={"src/test/resources/updateRequest.feature"})
+        "src/test/resources/manager_logout.feature"}, plugin={"pretty", "html: results/html", "json:results/json/results.json", "junit:results/junit/cucumber.xml"})
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     public static WebDriver driver;
